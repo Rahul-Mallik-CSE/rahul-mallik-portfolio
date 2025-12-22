@@ -85,7 +85,25 @@ export const downToUp: Variants = {
     opacity: 1,
     transition: {
       type: "spring",
-      stiffness: 100,
+      stiffness: 50,
+      damping: 20,
+      duration: 0.5,
+    },
+  },
+};
+
+// Down to Up Animation
+export const downToUpText: Variants = {
+  hidden: {
+    y: 40,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 50,
       damping: 20,
       duration: 0.5,
     },
