@@ -34,7 +34,7 @@ export default function RootLayout({
         }}
       >
         <div className="bg-[#1b1b1b] w-full flex mx-auto min-h-dvw">
-          <div className="max-w-[2500px] mx-auto w-full ">
+          <div className=" mx-auto w-full ">
             <NavBar />
             {children}
           </div>

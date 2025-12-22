@@ -25,8 +25,8 @@ const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full px-4 sm:px-6  ">
-      <div className=" mx-auto flex items-center justify-between">
+    <header className="sticky top-0 z-50 w-full px-4 lg:px-6  ">
+      <div className="max-w-500 mx-auto flex items-center justify-between">
         {/* Logo */}
         <motion.div
           className="py-0.5 lg:w-56 flex items-center gap-0.5"
