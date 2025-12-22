@@ -1,11 +1,11 @@
 /** @format */
 
-import NavBar from "@/components/CommonComponents/NavBar";
+import HeroSection from "@/components/HeroComponents/HeroSection";
 
 export default function Home() {
   return (
     <div className="flex items-center justify-center w-full text-white">
-      Rahul mallik
+      <HeroSection />
     </div>
   );
 }
