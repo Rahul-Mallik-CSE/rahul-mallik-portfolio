@@ -41,7 +41,7 @@ export const leftToRight: Variants = {
 // Right to Left Animation
 export const rightToLeft: Variants = {
   hidden: {
-    x: 100,
+    x: 200,
     opacity: 0,
   },
   visible: {
