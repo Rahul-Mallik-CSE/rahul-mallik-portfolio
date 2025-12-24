@@ -11,21 +11,24 @@ import {
   SiReact,
   SiNextdotjs,
   SiRedux,
-  SiExpress,
-  SiNodedotjs,
   SiTailwindcss,
-  SiMongodb,
-  SiPostgresql,
-  SiPrisma,
   SiGit,
   SiGithub,
   SiFigma,
   SiVercel,
   SiMaterialdesign,
+  SiPython,
+  SiC,
+  SiCplusplus,
+  SiBootstrap,
+  SiPostman,
+  SiGoogleads,
+  SiNetlify,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import { rightToLeft } from "../AllAnimation/Animation";
+import { BsFillCursorFill } from "react-icons/bs";
 
 // Animation variants
 const containerVariants = {
@@ -95,6 +98,24 @@ const SkillsSection = () => {
           color: "#3178C6",
         },
         {
+          name: "Python",
+          level: "Intermediate",
+          icon: <SiPython className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#3776AB",
+        },
+        {
+          name: "C",
+          level: "Intermediate",
+          icon: <SiC className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#A8B9CC",
+        },
+        {
+          name: "C++",
+          level: "Intermediate",
+          icon: <SiCplusplus className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#00599C",
+        },
+        {
           name: "HTML5",
           level: "Expert",
           icon: <SiHtml5 className="w-5 h-5 md:w-6 md:h-6" />,
@@ -130,16 +151,10 @@ const SkillsSection = () => {
           color: "#764ABC",
         },
         {
-          name: "Express.js",
-          level: "Intermediate",
-          icon: <SiExpress className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#FFFFFF",
-        },
-        {
-          name: "Node.js",
-          level: "Intermediate",
-          icon: <SiNodedotjs className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#339933",
+          name: "Redux Toolkit",
+          level: "Expert",
+          icon: <SiRedux className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#764ABC",
         },
         {
           name: "React Router",
@@ -154,10 +169,10 @@ const SkillsSection = () => {
           color: "#EC5990",
         },
         {
-          name: "Redux Toolkit",
+          name: "Framer Motion",
           level: "Expert",
-          icon: <SiRedux className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#764ABC",
+          icon: <TbBrandFramerMotion className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#FEF62A",
         },
       ],
     },
@@ -171,10 +186,27 @@ const SkillsSection = () => {
           color: "#06B6D4",
         },
         {
-          name: "ShadCN/UI",
+          name: "Bootstrap",
+          level: "Expert",
+          icon: <SiBootstrap className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#7952B3",
+        },
+      ],
+    },
+    {
+      title: "REACT UI COMPONENTS",
+      skills: [
+        {
+          name: "ShadCN",
           level: "Expert",
           icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
           color: "#FFFFFF",
+        },
+        {
+          name: "Aceternity UI",
+          level: "Expert",
+          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#A855F7",
         },
         {
           name: "Material UI",
@@ -183,33 +215,28 @@ const SkillsSection = () => {
           color: "#007FFF",
         },
         {
-          name: "Ant Design",
+          name: "React Bits",
           level: "Intermediate",
           icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#0170FE",
-        },
-      ],
-    },
-    {
-      title: "DATABASE & MODEL",
-      skills: [
-        {
-          name: "MongoDB",
-          level: "Intermediate",
-          icon: <SiMongodb className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#47A248",
+          color: "#61DAFB",
         },
         {
-          name: "PostgreSQL",
-          level: "Intermediate",
-          icon: <SiPostgresql className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#4169E1",
+          name: "UI Layouts",
+          level: "Expert",
+          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#10B981",
         },
         {
-          name: "Prisma",
+          name: "Shera UI",
           level: "Intermediate",
-          icon: <SiPrisma className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#2D3748",
+          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#F59E0B",
+        },
+        {
+          name: "Swiper JS",
+          level: "Expert",
+          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#6332F6",
         },
       ],
     },
@@ -237,14 +264,26 @@ const SkillsSection = () => {
         {
           name: "Postman",
           level: "Expert",
-          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#FF6C37",
+          icon: <SiPostman className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#F76935",
         },
         {
           name: "VS Code",
           level: "Expert",
           icon: <VscVscode className="w-5 h-5 md:w-6 md:h-6" />,
           color: "#007ACC",
+        },
+        {
+          name: "Cursor",
+          level: "Expert",
+          icon: <BsFillCursorFill className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#fffff",
+        },
+        {
+          name: "Antigravity",
+          level: "Expert",
+          icon: <SiGoogleads className="w-5 h-5 md:w-6 md:h-6" />,
+          color: "#4285F4",
         },
         {
           name: "Vercel",
@@ -255,7 +294,7 @@ const SkillsSection = () => {
         {
           name: "Netlify",
           level: "Expert",
-          icon: <TbBrandFramerMotion className="w-5 h-5 md:w-6 md:h-6" />,
+          icon: <SiNetlify className="w-5 h-5 md:w-6 md:h-6" />,
           color: "#00C7B7",
         },
       ],
