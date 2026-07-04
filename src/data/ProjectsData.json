@@ -1,0 +1,150 @@
+[
+	{
+		"id": 1,
+		"name": "Gavellia E-Commerce Website",
+		"description": "A sophisticated e-commerce platform that supports competitive bidding, timed auctions, and live bidding sessions across fashion, electronics, collectibles, and luxury items.",
+		"technologies": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Shadcn/ui", "React Router DOM", "JavaScript", "HTML", "CSS"],
+		"image": "/projectimages/gavillia.png",
+		"liveLink": "https://gavellia-client-side.vercel.app/",
+		"codeLink": "https://github.com/Rahul-Mallik-CSE/Gavellia_Client.git",
+		"featured": true
+	},
+	{
+		"id": 2,
+		"name": "Gavellia Buyer Dashboard",
+		"description": "A feature-rich buyer dashboard for the Gavellia auction platform to manage bidding activity, purchases, messages, and profile settings.",
+		"technologies": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Shadcn/ui", "React Router DOM", "JavaScript", "HTML", "CSS"],
+		"image": "/projectimages/gavillia-buyer-dashboard.png",
+		"liveLink": "https://gavellia-buyer-dashboard.vercel.app/",
+		"codeLink": "https://github.com/Rahul-Mallik-CSE/Gavellia_Buyer_Dashboard.git"
+	},
+	{
+		"id": 3,
+		"name": "Prime Flow",
+		"description": "A comprehensive SaaS-based CRM client application combining HR testing, financial management, AI-powered chat assistance, and business analytics.",
+		"technologies": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Shadcn/ui", "React Router DOM", "JavaScript", "HTML", "CSS"],
+		"image": "/projectimages/PrimeFlow.png",
+		"liveLink": "https://primeflow.vercel.app",
+		"codeLink": "https://github.com/rahul3507/SaaS-Based-CRM-Client.git",
+		"featured": true
+	},
+	{
+		"id": 4,
+		"name": "Restaurant Food Management CRM",
+		"description": "A modern CRM system for restaurant operations with order management, menu administration, rider coordination, analytics, and payment processing.",
+		"technologies": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Shadcn/ui", "React Router DOM", "JavaScript", "HTML", "CSS"],
+		"image": "/projectimages/restaurant-food-management.png",
+		"liveLink": "https://restaurant-food-management-crm.vercel.app/",
+		"codeLink": "https://github.com/Rahul-Mallik-CSE/restaurant_food_management_crm.git",
+		"featured": true
+	},
+	{
+		"id": 5,
+		"name": "Food Management Admin",
+		"description": "An admin CRM for food delivery businesses with control over restaurants, customers, riders, orders, payments, and food categories.",
+		"technologies": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Shadcn/ui", "React Router DOM", "JavaScript", "HTML", "CSS"],
+		"image": "/projectimages/food-management-admin.png",
+		"liveLink": "https://admin-food-management-crm.vercel.app/",
+		"codeLink": "https://github.com/Rahul-Mallik-CSE/Admin-Food-Management-CRM.git"
+	},
+	{
+		"id": 6,
+		"name": "Beebeeh User Dashboard",
+		"description": "A responsive web dashboard for technicians to manage job assignments, service requests, notifications, and job records.",
+		"technologies": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Shadcn/ui", "React Router DOM", "JavaScript", "HTML", "CSS"],
+		"image": "/projectimages/beebeeh-user-dashboard.png",
+		"liveLink": "https://beebeeh-web-platform.vercel.app/overview",
+		"codeLink": "https://github.com/Rahul-Mallik-CSE/beebeeh-web-platform.git"
+	},
+	{
+		"id": 7,
+		"name": "Security Workforce User Portal",
+		"description": "A professional portal for security companies covering job posting, applicant selection, contracts, payroll tracking, and operative management.",
+		"technologies": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Shadcn/ui", "React Router DOM", "JavaScript", "HTML", "CSS"],
+		"image": "/projectimages/Security-workforce.png",
+		"liveLink": "https://security-workforce-user.vercel.app/",
+		"codeLink": "https://github.com/Rahul-Mallik-CSE/Security-Workforce-User.git",
+        "featured": true
+	},
+	{
+		"id": 8,
+		"name": "La Plant Hire",
+		"description": "A modern website for a construction equipment rental and materials supply company, designed with a strong visual hierarchy and clear calls to action.",
+		"technologies": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Redux Toolkit", "Shadcn/ui", "React Router DOM", "JavaScript", "HTML", "CSS"],
+		"image": "/projectimages/La-plant.png",
+		"liveLink": "https://la-plant-hire.vercel.app/",
+		"codeLink": "https://github.com/Rahul-Mallik-CSE/La-Plant-Hire.git"
+	},
+	{
+		"id": 9,
+		"name": "Bowler Website",
+		"description": "A management website for bowlers, tournaments, profiles, and manufacturers built with a clean responsive interface.",
+		"technologies": ["React.js", "Tailwind CSS", "Shadcn/ui", "React Router DOM", "JavaScript", "Bootstrap", "HTML", "CSS"],
+		"image": "/projectimages/Bowler.png",
+		"liveLink": "https://bowler-website.vercel.app/",
+		"codeLink": "https://github.com/rahul3507/Bowler-website.git"
+	},
+	{
+		"id": 10,
+		"name": "ALAMOCITYPULSE",
+		"description": "A modern newspaper frontend with real-time news updates, category browsing, and responsive reading experiences.",
+		"technologies": ["React.js", "TypeScript", "Tailwind CSS", "Bootstrap", "Shadcn/ui", "React Router DOM"],
+		"image": "/projectimages/Newspaper.png",
+		"liveLink": "https://alamocitypulse.netlify.app/",
+		"codeLink": "https://github.com/nrbnayon/Newspaper-Frontend.git"
+	},
+	{
+		"id": 11,
+		"name": "Todo App",
+		"description": "A todo application that supports adding, deleting, counting, and filtering items by status.",
+		"technologies": ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
+		"image": "/projectimages/Todo-App-JS.png",
+		"liveLink": "https://todo-app-js-3507.netlify.app/",
+		"codeLink": "https://github.com/rahul3507/Todo-App-js.git"
+	},
+	{
+		"id": 12,
+		"name": "User Management Todo App",
+		"description": "A React-based user management app that adds and removes user data with Context API.",
+		"technologies": ["HTML", "CSS", "React.js", "JavaScript"],
+		"image": "/projectimages/User-management-todo-app.png",
+		"liveLink": "https://user-management-app-context-api.netlify.app/",
+		"codeLink": "https://github.com/rahul3507/User-Management-App-React-jsI.git"
+	},
+	{
+		"id": 13,
+		"name": "Portfolio",
+		"description": "An earlier portfolio project showcasing my front-end design and layout skills.",
+		"technologies": ["HTML", "CSS"],
+		"image": "/projectimages/portfolio.png",
+		"liveLink": "https://portfolio-rahul-mallik.netlify.app/",
+		"codeLink": "https://github.com/rahul3507/Portfolio-Rahul-Mallik.git"
+	},
+	{
+		"id": 14,
+		"name": "Counter and Fetching App",
+		"description": "A practice project for state management and API data fetching using React and Redux Toolkit.",
+		"technologies": ["HTML", "CSS", "JavaScript", "React.js", "Redux Toolkit", "API"],
+		"image": "/projectimages/Country.png",
+		"liveLink": "https://react-redux-toolkit-todo-practice.netlify.app/",
+		"codeLink": "https://github.com/rahul3507/Counting-App-fetch-Data-React-Redux-toolkit.git"
+	},
+	{
+		"id": 15,
+		"name": "Country App",
+		"description": "A country browsing application with search, deletion, and fetch functionality built with React and useEffect.",
+		"technologies": ["HTML", "CSS", "React.js", "JavaScript", "API"],
+		"image": "/projectimages/Country.png",
+		"liveLink": "https://country-app-react3507.netlify.app/",
+		"codeLink": "https://github.com/rahul3507/Country-App.git"
+	},
+	{
+		"id": 16,
+		"name": "Foodies",
+		"description": "A simple and clean food landing page project focused on layout and visual balance.",
+		"technologies": ["HTML", "CSS"],
+		"image": "/projectimages/foodies.png",
+		"liveLink": "https://shimmering-tartufo-6cdd49.netlify.app/",
+		"codeLink": "https://github.com/rahul3507/Foodies--Frontend.git/"
+	}
+]
