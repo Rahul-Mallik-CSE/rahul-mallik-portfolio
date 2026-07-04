@@ -1,0 +1,242 @@
+[
+	{
+		"title": "LANGUAGES",
+		"skills": [
+			{
+				"name": "JavaScript (ES6+)",
+				"level": "Expert",
+				"iconKey": "javascript",
+				"color": "#F7DF1E"
+			},
+			{
+				"name": "TypeScript",
+				"level": "Intermediate",
+				"iconKey": "typescript",
+				"color": "#3178C6"
+			},
+			{
+				"name": "Python",
+				"level": "Intermediate",
+				"iconKey": "python",
+				"color": "#3776AB"
+			},
+			{
+				"name": "Java",
+				"level": "Intermediate",
+				"iconKey": "java",
+				"color": "#ED8B00"
+			},
+			{
+				"name": "C",
+				"level": "Intermediate",
+				"iconKey": "c",
+				"color": "#A8B9CC"
+			},
+			{
+				"name": "C++",
+				"level": "Intermediate",
+				"iconKey": "cplusplus",
+				"color": "#00599C"
+			},
+			{
+				"name": "HTML5",
+				"level": "Expert",
+				"iconKey": "html5",
+				"color": "#E34F26"
+			},
+			{
+				"name": "CSS3",
+				"level": "Expert",
+				"iconKey": "css3",
+				"color": "#1572B6"
+			}
+		]
+	},
+	{
+		"title": "JAVASCRIPT FRAMEWORKS & LIBRARIES",
+		"skills": [
+			{
+				"name": "React.js",
+				"level": "Expert",
+				"iconKey": "react",
+				"color": "#61DAFB"
+			},
+			{
+				"name": "Next.js",
+				"level": "Expert",
+				"iconKey": "nextjs",
+				"color": "#FFFFFF"
+			},
+			{
+				"name": "Redux",
+				"level": "Expert",
+				"iconKey": "redux",
+				"color": "#764ABC"
+			},
+			{
+				"name": "Redux Toolkit",
+				"level": "Expert",
+				"iconKey": "redux",
+				"color": "#764ABC"
+			},
+			{
+				"name": "React Router",
+				"level": "Expert",
+				"iconKey": "react",
+				"color": "#CA4245"
+			},
+			{
+				"name": "React Hook Form",
+				"level": "Expert",
+				"iconKey": "react",
+				"color": "#EC5990"
+			},
+			{
+				"name": "Framer Motion",
+				"level": "Expert",
+				"iconKey": "framerMotion",
+				"color": "#FEF62A"
+			}
+		]
+	},
+	{
+		"title": "BACKEND FRAMEWORKS",
+		"skills": [
+			{
+				"name": "Spring Boot",
+				"level": "Intermediate",
+				"iconKey": "springBoot",
+				"color": "#6DB33F"
+			},
+			{
+				"name": "Django",
+				"level": "Intermediate",
+				"iconKey": "django",
+				"color": "#092E20"
+			}
+		]
+	},
+	{
+		"title": "CSS FRAMEWORKS & LIBRARIES",
+		"skills": [
+			{
+				"name": "Tailwind CSS",
+				"level": "Expert",
+				"iconKey": "tailwindcss",
+				"color": "#06B6D4"
+			},
+			{
+				"name": "Bootstrap",
+				"level": "Expert",
+				"iconKey": "bootstrap",
+				"color": "#7952B3"
+			}
+		]
+	},
+	{
+		"title": "REACT UI COMPONENTS",
+		"skills": [
+			{
+				"name": "ShadCN",
+				"level": "Expert",
+				"iconKey": "react",
+				"color": "#FFFFFF"
+			},
+			{
+				"name": "Aceternity UI",
+				"level": "Expert",
+				"iconKey": "react",
+				"color": "#A855F7"
+			},
+			{
+				"name": "Material UI",
+				"level": "Intermediate",
+				"iconKey": "material",
+				"color": "#007FFF"
+			},
+			{
+				"name": "React Bits",
+				"level": "Intermediate",
+				"iconKey": "react",
+				"color": "#61DAFB"
+			},
+			{
+				"name": "UI Layouts",
+				"level": "Expert",
+				"iconKey": "react",
+				"color": "#10B981"
+			},
+			{
+				"name": "Shera UI",
+				"level": "Intermediate",
+				"iconKey": "react",
+				"color": "#F59E0B"
+			},
+			{
+				"name": "Swiper JS",
+				"level": "Expert",
+				"iconKey": "react",
+				"color": "#6332F6"
+			}
+		]
+	},
+	{
+		"title": "TOOLS & PLATFORMS",
+		"skills": [
+			{
+				"name": "Git",
+				"level": "Expert",
+				"iconKey": "git",
+				"color": "#F05032"
+			},
+			{
+				"name": "GitHub",
+				"level": "Expert",
+				"iconKey": "github",
+				"color": "#FFFFFF"
+			},
+			{
+				"name": "Figma",
+				"level": "Expert",
+				"iconKey": "figma",
+				"color": "#F24E1E"
+			},
+			{
+				"name": "Postman",
+				"level": "Expert",
+				"iconKey": "postman",
+				"color": "#F76935"
+			},
+			{
+				"name": "VS Code",
+				"level": "Expert",
+				"iconKey": "vscode",
+				"color": "#007ACC"
+			},
+			{
+				"name": "Cursor",
+				"level": "Expert",
+				"iconKey": "cursor",
+				"color": "#ffffff"
+			},
+			{
+				"name": "Antigravity",
+				"level": "Expert",
+				"iconKey": "antigravity",
+				"color": "#4285F4"
+			},
+			{
+				"name": "Vercel",
+				"level": "Expert",
+				"iconKey": "vercel",
+				"color": "#FFFFFF"
+			},
+			{
+				"name": "Netlify",
+				"level": "Expert",
+				"iconKey": "netlify",
+				"color": "#00C7B7"
+			}
+		]
+	}
+]

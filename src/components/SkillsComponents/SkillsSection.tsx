@@ -24,20 +24,24 @@ import {
   SiPostman,
   SiGoogleads,
   SiNetlify,
+  SiSpringboot,
+  SiDjango,
+  SiOpenjdk,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import { BsFillCursorFill } from "react-icons/bs";
 import SectionHeading from "../CommonComponents/SectionHeading";
+import { SkillCategory } from "@/types/SkillsTypes";
+import skillsData from "@/data/SkillsData.json";
 
-// Animation variants
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
+      staggerChildren: 0.08,
+      delayChildren: 0.15,
     },
   },
 };
@@ -56,7 +60,7 @@ const itemVariants: Variants = {
 };
 
 const categoryVariants: Variants = {
-  hidden: { x: -50, opacity: 0 },
+  hidden: { x: -40, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
@@ -68,238 +72,39 @@ const categoryVariants: Variants = {
   },
 };
 
-interface Skill {
-  name: string;
-  level: string;
-  icon: React.ReactNode;
-  color: string;
-}
+const iconMap: Record<string, React.ReactNode> = {
+  javascript: <SiJavascript className="h-5 w-5 md:h-6 md:w-6" />,
+  typescript: <SiTypescript className="h-5 w-5 md:h-6 md:w-6" />,
+  python: <SiPython className="h-5 w-5 md:h-6 md:w-6" />,
+  java: <SiOpenjdk className="h-5 w-5 md:h-6 md:w-6" />,
+  c: <SiC className="h-5 w-5 md:h-6 md:w-6" />,
+  cplusplus: <SiCplusplus className="h-5 w-5 md:h-6 md:w-6" />,
+  html5: <SiHtml5 className="h-5 w-5 md:h-6 md:w-6" />,
+  css3: <SiCss3 className="h-5 w-5 md:h-6 md:w-6" />,
+  react: <SiReact className="h-5 w-5 md:h-6 md:w-6" />,
+  nextjs: <SiNextdotjs className="h-5 w-5 md:h-6 md:w-6" />,
+  redux: <SiRedux className="h-5 w-5 md:h-6 md:w-6" />,
+  framerMotion: <TbBrandFramerMotion className="h-5 w-5 md:h-6 md:w-6" />,
+  springBoot: <SiSpringboot className="h-5 w-5 md:h-6 md:w-6" />,
+  django: <SiDjango className="h-5 w-5 md:h-6 md:w-6" />,
+  tailwindcss: <SiTailwindcss className="h-5 w-5 md:h-6 md:w-6" />,
+  bootstrap: <SiBootstrap className="h-5 w-5 md:h-6 md:w-6" />,
+  material: <SiMaterialdesign className="h-5 w-5 md:h-6 md:w-6" />,
+  git: <SiGit className="h-5 w-5 md:h-6 md:w-6" />,
+  github: <SiGithub className="h-5 w-5 md:h-6 md:w-6" />,
+  figma: <SiFigma className="h-5 w-5 md:h-6 md:w-6" />,
+  postman: <SiPostman className="h-5 w-5 md:h-6 md:w-6" />,
+  vscode: <VscVscode className="h-5 w-5 md:h-6 md:w-6" />,
+  cursor: <BsFillCursorFill className="h-5 w-5 md:h-6 md:w-6" />,
+  antigravity: <SiGoogleads className="h-5 w-5 md:h-6 md:w-6" />,
+  vercel: <SiVercel className="h-5 w-5 md:h-6 md:w-6" />,
+  netlify: <SiNetlify className="h-5 w-5 md:h-6 md:w-6" />,
+};
 
-interface SkillCategory {
-  title: string;
-  skills: Skill[];
-}
+
 
 const SkillsSection = () => {
-  const skillsData: SkillCategory[] = [
-    {
-      title: "LANGUAGES",
-      skills: [
-        {
-          name: "JavaScript (ES6+)",
-          level: "Expert",
-          icon: <SiJavascript className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#F7DF1E",
-        },
-        {
-          name: "TypeScript",
-          level: "Intermediate",
-          icon: <SiTypescript className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#3178C6",
-        },
-        {
-          name: "Python",
-          level: "Intermediate",
-          icon: <SiPython className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#3776AB",
-        },
-        {
-          name: "C",
-          level: "Intermediate",
-          icon: <SiC className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#A8B9CC",
-        },
-        {
-          name: "C++",
-          level: "Intermediate",
-          icon: <SiCplusplus className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#00599C",
-        },
-        {
-          name: "HTML5",
-          level: "Expert",
-          icon: <SiHtml5 className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#E34F26",
-        },
-        {
-          name: "CSS3",
-          level: "Expert",
-          icon: <SiCss3 className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#1572B6",
-        },
-      ],
-    },
-    {
-      title: "JAVASCRIPT FRAMEWORKS & LIBRARIES",
-      skills: [
-        {
-          name: "React.js",
-          level: "Expert",
-          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#61DAFB",
-        },
-        {
-          name: "Next.js",
-          level: "Expert",
-          icon: <SiNextdotjs className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#FFFFFF",
-        },
-        {
-          name: "Redux",
-          level: "Expert",
-          icon: <SiRedux className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#764ABC",
-        },
-        {
-          name: "Redux Toolkit",
-          level: "Expert",
-          icon: <SiRedux className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#764ABC",
-        },
-        {
-          name: "React Router",
-          level: "Expert",
-          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#CA4245",
-        },
-        {
-          name: "React Hook Form",
-          level: "Expert",
-          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#EC5990",
-        },
-        {
-          name: "Framer Motion",
-          level: "Expert",
-          icon: <TbBrandFramerMotion className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#FEF62A",
-        },
-      ],
-    },
-    {
-      title: "CSS FRAMEWORKS & LIBRARIES",
-      skills: [
-        {
-          name: "Tailwind CSS",
-          level: "Expert",
-          icon: <SiTailwindcss className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#06B6D4",
-        },
-        {
-          name: "Bootstrap",
-          level: "Expert",
-          icon: <SiBootstrap className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#7952B3",
-        },
-      ],
-    },
-    {
-      title: "REACT UI COMPONENTS",
-      skills: [
-        {
-          name: "ShadCN",
-          level: "Expert",
-          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#FFFFFF",
-        },
-        {
-          name: "Aceternity UI",
-          level: "Expert",
-          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#A855F7",
-        },
-        {
-          name: "Material UI",
-          level: "Intermediate",
-          icon: <SiMaterialdesign className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#007FFF",
-        },
-        {
-          name: "React Bits",
-          level: "Intermediate",
-          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#61DAFB",
-        },
-        {
-          name: "UI Layouts",
-          level: "Expert",
-          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#10B981",
-        },
-        {
-          name: "Shera UI",
-          level: "Intermediate",
-          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#F59E0B",
-        },
-        {
-          name: "Swiper JS",
-          level: "Expert",
-          icon: <SiReact className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#6332F6",
-        },
-      ],
-    },
-    {
-      title: "TOOLS & PLATFORMS",
-      skills: [
-        {
-          name: "Git",
-          level: "Expert",
-          icon: <SiGit className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#F05032",
-        },
-        {
-          name: "GitHub",
-          level: "Expert",
-          icon: <SiGithub className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#FFFFFF",
-        },
-        {
-          name: "Figma",
-          level: "Expert",
-          icon: <SiFigma className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#F24E1E",
-        },
-        {
-          name: "Postman",
-          level: "Expert",
-          icon: <SiPostman className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#F76935",
-        },
-        {
-          name: "VS Code",
-          level: "Expert",
-          icon: <VscVscode className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#007ACC",
-        },
-        {
-          name: "Cursor",
-          level: "Expert",
-          icon: <BsFillCursorFill className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#fffff",
-        },
-        {
-          name: "Antigravity",
-          level: "Expert",
-          icon: <SiGoogleads className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#4285F4",
-        },
-        {
-          name: "Vercel",
-          level: "Expert",
-          icon: <SiVercel className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#FFFFFF",
-        },
-        {
-          name: "Netlify",
-          level: "Expert",
-          icon: <SiNetlify className="w-5 h-5 md:w-6 md:h-6" />,
-          color: "#00C7B7",
-        },
-      ],
-    },
-  ];
+  const typedSkillsData = skillsData as SkillCategory[];
 
   const getLevelColor = (level: string) => {
     switch (level) {
@@ -325,7 +130,7 @@ const SkillsSection = () => {
 
         {/* Skills Categories */}
         <div className="space-y-8 md:space-y-10">
-          {skillsData.map((category, categoryIndex) => (
+          {typedSkillsData.map((category, categoryIndex) => (
             <motion.div
               key={categoryIndex}
               initial="hidden"
@@ -377,7 +182,7 @@ const SkillsSection = () => {
                             color: skill.color,
                           }}
                         >
-                          {skill.icon}
+                          {iconMap[skill.iconKey]}
                         </motion.div>
 
                         {/* Text Content */}
