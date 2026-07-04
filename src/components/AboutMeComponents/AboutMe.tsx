@@ -11,9 +11,13 @@ import { Button } from "../ui/button";
 import { GoArrowUpRight } from "react-icons/go";
 import { ArrowDownToLine } from "lucide-react";
 import SectionHeading from "../CommonComponents/SectionHeading";
-const AboutMe = () => {
+type AboutMeProps = {
+  onOpenContact?: () => void;
+};
+
+const AboutMe = ({ onOpenContact }: AboutMeProps) => {
   return (
-    <section className="w-full    px-4 lg:px-6 ">
+    <section id="about" className="w-full px-4 lg:px-6 scroll-mt-24">
       <div className="max-w-500 mx-auto  p-2 md:p-4 lg:p-6 ">
         <SectionHeading title="About Me" />
         <div className="w-full min-h-96 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden rounded-4xl  bg-[#282a2a] p-4 md:p-6 lg:p-8 ">
@@ -95,7 +99,11 @@ const AboutMe = () => {
                 animate="visible"
                 className="flex gap-2 mt-4 lg:mt-6 justify-center md:justify-start"
               >
-                <Button className="group inline-flex items-center justify-center gap-2 px-6 xl:px-7 py-3 xl:py-3.5 rounded-xl border-[0.5px] border-solid border-white bg-[linear-gradient(134deg,rgba(37,37,37,1)_17%,rgba(132,132,132,1)_100%)] hover:opacity-90 transition-opacity">
+                <Button
+                  type="button"
+                  onClick={onOpenContact}
+                  className="group inline-flex items-center justify-center gap-2 px-6 xl:px-7 py-3 xl:py-3.5 rounded-xl border-[0.5px] border-solid border-white bg-[linear-gradient(134deg,rgba(37,37,37,1)_17%,rgba(132,132,132,1)_100%)] hover:opacity-90 transition-opacity"
+                >
                   <span className="font-normal text-white text-base xl:text-lg text-center leading-[21.6px] whitespace-nowrap tracking-[0]">
                     Get in Touch
                   </span>

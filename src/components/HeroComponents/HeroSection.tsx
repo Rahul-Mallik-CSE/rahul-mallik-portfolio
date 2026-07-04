@@ -9,12 +9,11 @@ import {
 } from "../AllAnimation/Animation";
 import { Button } from "../ui/button";
 import { ArrowDownToLine, Linkedin } from "lucide-react";
-import { IoDocumentSharp } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 const HeroSection = () => {
   return (
-    <section className="w-full  mt-4 md:mt-6  px-4 lg:px-6 ">
+    <section id="hero" className="w-full mt-4 px-4 lg:px-6 md:mt-6 scroll-mt-24">
       <div className="max-w-500 mx-auto  p-2 md:p-4 lg:p-6 ">
         <div className="w-full grid grid-cols-1 md:grid-cols-3 overflow-hidden rounded-4xl border border-gray-300 bg-[#282a2a] p-4 md:p-6 lg:p-8 ">
           <div className="col-span-2 order-2 md:order-1 text-center md:text-left">
@@ -74,18 +73,31 @@ const HeroSection = () => {
                 <ArrowDownToLine className="text-[#95EDFF]" />
               </Button>
 
-              <Button className="group inline-flex  items-center justify-center gap-2 px-6 xl:px-7 py-3 xl:py-3.5 rounded-lg border-[0.5px] border-solid border-[#95EDFF] bg-[#95EDFF] hover:bg-[#7de5fa] hover:opacity-100 transition-opacity">
-                <span className="font-normal text-black text-base xl:text-lg text-center leading-[21.6px] whitespace-nowrap tracking-[0]">
+              <Button asChild className="group inline-flex  items-center justify-center gap-2 px-6 xl:px-7 py-3 xl:py-3.5 rounded-lg border-[0.5px] border-solid border-[#95EDFF] bg-[#95EDFF] hover:bg-[#7de5fa] hover:opacity-100 transition-opacity">
+                <a href="#contact" className="font-normal text-black text-base xl:text-lg text-center leading-[21.6px] whitespace-nowrap tracking-[0]">
                   Hire me
-                </span>{" "}
-                <IoDocumentSharp className="text-black" />
+                </a>
               </Button>
               <div className="gap-0">
-                <Button className="bg-transparent hover:bg-transparent">
-                  <FaGithub className="w-8 h-8" />
+                <Button asChild className="bg-transparent hover:bg-transparent">
+                  <a
+                    href="https://github.com/Rahul-Mallik-CSE"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="GitHub profile"
+                  >
+                    <FaGithub className="w-8 h-8" />
+                  </a>
                 </Button>
-                <Button className="bg-transparent hover:bg-transparent p-0">
-                  <Linkedin />
+                <Button asChild className="bg-transparent hover:bg-transparent p-0">
+                  <a
+                    href="https://www.linkedin.com/in/rahul-mallik-cse/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="LinkedIn profile"
+                  >
+                    <Linkedin />
+                  </a>
                 </Button>
               </div>
             </motion.div>

@@ -120,7 +120,7 @@ const SkillsSection = () => {
   };
 
   return (
-    <section className="w-full    px-4 lg:px-6">
+    <section id="skills" className="w-full px-4 lg:px-6 scroll-mt-24">
       <div className="max-w-500 mx-auto  p-2 md:p-4 lg:p-6">
         <SectionHeading
           title="Skills"

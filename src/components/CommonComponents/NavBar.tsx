@@ -14,18 +14,28 @@ import {
 } from "../AllAnimation/Animation";
 
 const navigationItems = [
-  { label: "Home" },
-  { label: "Previous Work" },
-  { label: "Service" },
-  { label: "About me" },
-  { label: "Contact" },
+  { label: "Home", href: "#hero" },
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
+  { label: "Contact", href: "#contact" },
 ];
 
-const NavBar = () => {
+type NavBarProps = {
+  onOpenContact?: () => void;
+};
+
+const NavBar = ({ onOpenContact }: NavBarProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const handleContactOpen = () => {
+    setIsMobileMenuOpen(false);
+    onOpenContact?.();
+  };
+
   return (
-    <header className="sticky top-0 z-50 w-full px-4 lg:px-6  ">
+    <header className="sticky top-0 z-50 w-full px-4 lg:px-6">
       <div className="max-w-500 mx-auto flex items-center justify-between">
         {/* Logo */}
         <motion.div
@@ -54,13 +64,10 @@ const NavBar = () => {
           >
             {navigationItems.map((item, index) => (
               <motion.div key={index} variants={listItemLeftToRight}>
-                <Button
-                  variant="ghost"
-                  className="inline-flex p-2.5 items-center justify-center gap-2.5 hover:bg-white/10 transition-colors"
-                >
-                  <span className="font-normal text-white text-base xl:text-lg text-center tracking-[0] leading-[21.6px] whitespace-nowrap">
+                <Button asChild variant="ghost" className="inline-flex p-2.5 items-center justify-center gap-2.5 hover:bg-white/10 transition-colors">
+                  <a href={item.href} className="font-normal text-white text-base xl:text-lg text-center tracking-[0] leading-[21.6px] whitespace-nowrap">
                     {item.label}
-                  </span>
+                  </a>
                 </Button>
               </motion.div>
             ))}
@@ -73,7 +80,11 @@ const NavBar = () => {
           initial="hidden"
           animate="visible"
         >
-          <Button className="group inline-flex items-center justify-center gap-2 px-6 xl:px-7 py-3 xl:py-3.5 rounded-xl border-[0.5px] border-solid border-white bg-[linear-gradient(134deg,rgba(37,37,37,1)_17%,rgba(132,132,132,1)_100%)] hover:opacity-90 transition-opacity">
+          <Button
+            type="button"
+            onClick={handleContactOpen}
+            className="group inline-flex items-center justify-center gap-2 px-6 xl:px-7 py-3 xl:py-3.5 rounded-xl border-[0.5px] border-solid border-white bg-[linear-gradient(134deg,rgba(37,37,37,1)_17%,rgba(132,132,132,1)_100%)] hover:opacity-90 transition-opacity"
+          >
             <span className="font-normal text-white text-base xl:text-lg text-center leading-[21.6px] whitespace-nowrap tracking-[0]">
               Get in Touch
             </span>
@@ -104,17 +115,19 @@ const NavBar = () => {
         >
           <nav className="flex flex-col items-center pt-20 pb-8 gap-4 px-8">
             {navigationItems.map((item, index) => (
-              <Button
-                key={index}
-                variant="ghost"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="w-full max-w-xs py-4 hover:bg-white/10 transition-colors"
-              >
-                <span className="font-normal text-white text-xl tracking-[0] leading-[21.6px]">
+              <Button key={index} asChild variant="ghost" className="w-full max-w-xs py-4 hover:bg-white/10 transition-colors">
+                <a href={item.href} onClick={() => setIsMobileMenuOpen(false)} className="font-normal text-white text-xl tracking-[0] leading-[21.6px]">
                   {item.label}
-                </span>
+                </a>
               </Button>
             ))}
+            <Button
+              type="button"
+              onClick={handleContactOpen}
+              className="mt-2 w-full max-w-xs rounded-xl border border-white/30 bg-[linear-gradient(134deg,rgba(37,37,37,1)_17%,rgba(132,132,132,1)_100%)] py-4 text-white hover:opacity-90"
+            >
+              Get in Touch
+            </Button>
           </nav>
         </div>
       </div>

@@ -17,7 +17,7 @@ const ProjectsSection = () => {
   const hasMoreProjects = regularProjects.length > 6;
 
   return (
-    <section className="w-full px-4 lg:px-6">
+    <section id="projects" className="w-full px-4 lg:px-6 scroll-mt-24">
       <div className="mx-auto max-w-500 p-2 md:p-4 lg:p-6">
         <SectionHeading
           title="Projects"
