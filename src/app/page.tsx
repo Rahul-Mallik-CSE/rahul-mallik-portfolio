@@ -12,6 +12,7 @@ import NavBar from "@/components/CommonComponents/NavBar";
 import HeroSection from "@/components/HeroComponents/HeroSection";
 import ProjectsSection from "@/components/ProjectsComponents/ProjectsSection";
 import SkillsSection from "@/components/SkillsComponents/SkillsSection";
+import EducationSection from "@/components/EducationComponents/EducationSection";
 
 export default function Home() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -24,6 +25,7 @@ export default function Home() {
       <ExperienceSection />
       <ProjectsSection />
       <SkillsSection />
+      <EducationSection />
       <ContactSection onOpenContact={() => setIsContactModalOpen(true)} />
       <Footer onOpenContact={() => setIsContactModalOpen(true)} />
       <SendEmailModal
