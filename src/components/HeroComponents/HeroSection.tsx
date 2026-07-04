@@ -1,7 +1,6 @@
 /** @format */
 "use client";
 import TextType from "../ui/TextType";
-import SplitText from "../ui/SplitText";
 import { motion } from "framer-motion";
 import {
   downToUpText,
@@ -26,8 +25,10 @@ const HeroSection = () => {
               text={["Welcome to my Portfolio!"]}
               typingSpeed={35}
               pauseDuration={200000}
-              showCursor={true}
+              showCursor={false}
               cursorCharacter="|"
+              variableSpeed={false}
+              onSentenceComplete={() => {}}
               className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4"
             />
             <motion.p
@@ -38,8 +39,14 @@ const HeroSection = () => {
             >
               I&apos;m,
             </motion.p>
-            <SplitText
+            <TextType
               text="Rahul Mallik "
+              typingSpeed={35}
+              pauseDuration={200000}
+              showCursor={false}
+              cursorCharacter="|"
+              variableSpeed={false}
+              onSentenceComplete={() => {}}
               className="text-3xl md:text-4xl lg:text-5xl font-bold"
             />
             <motion.p

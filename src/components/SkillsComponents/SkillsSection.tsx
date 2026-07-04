@@ -2,7 +2,7 @@
 
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import {
   SiJavascript,
   SiTypescript,
@@ -27,11 +27,11 @@ import {
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
-import { rightToLeft } from "../AllAnimation/Animation";
 import { BsFillCursorFill } from "react-icons/bs";
+import SectionHeading from "../CommonComponents/SectionHeading";
 
 // Animation variants
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -42,7 +42,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { y: 20, opacity: 0 },
   visible: {
     y: 0,
@@ -55,7 +55,7 @@ const itemVariants = {
   },
 };
 
-const categoryVariants = {
+const categoryVariants: Variants = {
   hidden: { x: -50, opacity: 0 },
   visible: {
     x: 0,
@@ -317,43 +317,11 @@ const SkillsSection = () => {
   return (
     <section className="w-full    px-4 lg:px-6">
       <div className="max-w-500 mx-auto  p-2 md:p-4 lg:p-6">
-        <div className="mx-auto flex flex-col justify-center items-center">
-          <motion.h1
-            initial={{ opacity: 0, y: -30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl lg:text-5xl text-[#95EDFF] font-bold"
-          >
-            Skills
-          </motion.h1>
-          <motion.div
-            variants={rightToLeft}
-            initial="hidden"
-            animate="visible"
-            className="mb-6 flex items-center mt-2 "
-          >
-            <div className="w-4 sm:w-6 md:w-8 border border-[#95EDFF]"></div>
-            <div className="w-4 sm:w-6 md:w-8 border-3 rounded-2xl border-white"></div>
-            <div className="w-4 sm:w-6 md:w-8 border border-[#95EDFF]"></div>
-          </motion.div>
-        </div>
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12 md:mb-16"
-        >
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">
-            Technical Expertise
-          </h1>
-          <p className="text-sm md:text-base text-gray-400 max-w-3xl mx-auto px-4">
-            A comprehensive overview of my technical skills and expertise levels
-            across various domains of web development.
-          </p>
-        </motion.div>
+        <SectionHeading
+          title="Skills"
+          subtitle="Technical Expertise"
+          description="A comprehensive overview of my technical skills and expertise levels across various domains of web development."
+        />
 
         {/* Skills Categories */}
         <div className="space-y-8 md:space-y-10">
@@ -429,7 +397,7 @@ const SkillsSection = () => {
 
                       {/* Animated border effect */}
                       <motion.div
-                        className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#95EDFF] to-transparent"
+                        className="absolute bottom-0 left-0 h-0.5 bg-linear-to-r from-[#95EDFF] to-transparent"
                         initial={{ width: 0 }}
                         whileHover={{ width: "100%" }}
                         transition={{ duration: 0.3 }}

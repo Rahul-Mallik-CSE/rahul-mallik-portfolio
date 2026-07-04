@@ -1,0 +1,38 @@
+[
+  {
+    "company": "Join Venture AI",
+    "position": "Junior Front-end Developer",
+    "duration": "May 2025 - Present",
+    "technologies": [
+      "React.js",
+      "Next.js"
+    ],
+    "responsibilities": [
+      "Developed responsive and dynamic user interfaces using React.js and Next.js.",
+      "Focused on performance, accessibility, and smooth user experience across devices.",
+      "Collaborated with design and product teams to translate ideas into clean production-ready features."
+    ],
+    "achievements": [
+      "Built polished UI components that improved consistency across the product.",
+      "Helped deliver faster and more maintainable front-end features with reusable architecture."
+    ]
+  },
+  {
+    "company": "Innovate International Ltd.",
+    "position": "Intern (3 months) & Junior Front-end Developer",
+    "duration": "June 2024 - April 2025",
+    "technologies": [
+      "React.js",
+      "Next.js"
+    ],
+    "responsibilities": [
+      "Contributed to responsive web interfaces using React.js and Next.js during internship and junior role.",
+      "Supported development of user-focused pages and refined layouts for different screen sizes.",
+      "Worked on implementing clean component-based structures for easier scaling and maintenance."
+    ],
+    "achievements": [
+      "Gained hands-on experience shipping real-world front-end features in a professional team.",
+      "Strengthened my ability to build reliable, responsive interfaces under deadline-driven workflows."
+    ]
+  }
+]

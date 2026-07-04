@@ -4,38 +4,18 @@
 import Image from "next/image";
 import {
   downToUp,
-  rightToLeft,
   smallToBigOpen,
 } from "../AllAnimation/Animation";
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import { GoArrowUpRight } from "react-icons/go";
 import { ArrowDownToLine } from "lucide-react";
+import SectionHeading from "../CommonComponents/SectionHeading";
 const AboutMe = () => {
   return (
     <section className="w-full    px-4 lg:px-6 ">
       <div className="max-w-500 mx-auto  p-2 md:p-4 lg:p-6 ">
-        <div className="mx-auto flex flex-col justify-center items-center">
-          <motion.h1
-            initial={{ opacity: 0, y: -30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl lg:text-5xl text-[#95EDFF] font-bold"
-          >
-            About Me
-          </motion.h1>
-          <motion.div
-            variants={rightToLeft}
-            initial="hidden"
-            animate="visible"
-            className="mb-6 flex items-center mt-2 "
-          >
-            <div className="w-4 sm:w-6 md:w-8 border border-[#95EDFF]"></div>
-            <div className="w-4 sm:w-6 md:w-8 border-3 rounded-2xl border-white"></div>
-            <div className="w-4 sm:w-6 md:w-8 border border-[#95EDFF]"></div>
-          </motion.div>
-        </div>
+        <SectionHeading title="About Me" />
         <div className="w-full min-h-96 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden rounded-4xl  bg-[#282a2a] p-4 md:p-6 lg:p-8 ">
           <div className="col-span-1  flex items-center justify-center ">
             <motion.div
@@ -59,7 +39,7 @@ const AboutMe = () => {
           <div className="col-span-1 lg:col-span-2 flex items-center justify-center  text-center md:text-left">
             <div className="flex flex-col">
               <motion.div
-                variants={rightToLeft}
+                variants={smallToBigOpen}
                 initial="hidden"
                 animate="visible"
                 className=""
