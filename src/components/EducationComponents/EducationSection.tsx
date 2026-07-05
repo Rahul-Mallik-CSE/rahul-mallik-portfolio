@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { smallToBigOpen, downToUp } from "../AllAnimation/Animation";
 import EducationItem from "./EducationItem";
 import EducationHighlight from "./EducationHighlight";
+import EducationAchievement from "./EducationAchievement";
 
 const educationData = [
   {
@@ -41,7 +42,7 @@ const EducationSection = () => {
         <SectionHeading
           title="Education"
           subtitle="Academic Background"
-          description="A focused timeline of the academic path that shaped my technical foundation and professional mindset."
+          description="A focused timeline of the academic path that shaped my technical foundation, followed by a few achievements that reflect the same growth mindset."
         />
 
         <div className="overflow-hidden rounded-4xl border border-white/10 bg-[#282a2a] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.35)] md:p-6 lg:p-8">
@@ -99,7 +100,10 @@ const EducationSection = () => {
             </motion.div>
           </div>
         </div>
+
+        <EducationAchievement />
       </div>
+ 
     </section>
   );
 };
