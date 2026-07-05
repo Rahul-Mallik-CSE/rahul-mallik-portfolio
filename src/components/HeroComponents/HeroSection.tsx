@@ -8,7 +8,7 @@ import {
   smallToBigOpen,
 } from "../AllAnimation/Animation";
 import { Button } from "../ui/button";
-import { ArrowDownToLine, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import ResumeDownloadButton from "../CommonComponents/ResumeDownloadButton";

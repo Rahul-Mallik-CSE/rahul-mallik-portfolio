@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import { ArrowUpRight, Facebook, Github, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 
@@ -28,9 +29,21 @@ const socialLinks = [
 const Footer = ({ onOpenContact }: FooterProps) => {
   return (
     <footer className="w-full px-4 lg:px-6 pb-6 md:pb-8">
-      <div className="mx-auto max-w-500 rounded-[2rem] border border-white/10 bg-[#202525] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.35)] md:p-6 lg:p-8">
+      <motion.div
+        initial={{ opacity: 0, y: 28 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="mx-auto max-w-500 rounded-[2rem] border border-white/10 bg-[#202525] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.35)] md:p-6 lg:p-8"
+      >
         <div className="grid gap-8 lg:grid-cols-[1.3fr_0.7fr_0.9fr]">
-          <div className="space-y-4">
+          <motion.div
+            initial={{ opacity: 0, x: -24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.55, ease: "easeOut" }}
+            className="space-y-4"
+          >
             <p className="text-sm uppercase tracking-[0.35em] text-white/45">Rahul Mallik</p>
             <h2 className="max-w-xl text-2xl font-bold text-white md:text-3xl lg:text-4xl">
               Front-end developer crafting responsive, animated interfaces with a clean dark aesthetic.
@@ -52,9 +65,15 @@ const Footer = ({ onOpenContact }: FooterProps) => {
                 <a href="mailto:mallikrahul3507mr@gmail.com">Email Me</a>
               </Button>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="space-y-4">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.55, ease: "easeOut", delay: 0.05 }}
+            className="space-y-4"
+          >
             <p className="text-sm uppercase tracking-[0.3em] text-white/45">Quick Links</p>
             <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-1">
               {quickLinks.map((link) => (
@@ -67,9 +86,15 @@ const Footer = ({ onOpenContact }: FooterProps) => {
                 </Link>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <div className="space-y-4">
+          <motion.div
+            initial={{ opacity: 0, x: 24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.55, ease: "easeOut", delay: 0.1 }}
+            className="space-y-4"
+          >
             <p className="text-sm uppercase tracking-[0.3em] text-white/45">Contact</p>
             <div className="space-y-3 text-sm text-white/70">
               <a className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 transition-colors hover:border-[#95EDFF]/30 hover:bg-white/8" href="mailto:rmallik191242@bscse.uiu.ac.bd">
@@ -96,14 +121,20 @@ const Footer = ({ onOpenContact }: FooterProps) => {
                 );
               })}
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-4 text-sm text-white/45 md:flex-row md:items-center md:justify-between">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.45, delay: 0.15 }}
+          className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-4 text-sm text-white/45 md:flex-row md:items-center md:justify-between"
+        >
           <p>© {new Date().getFullYear()} Rahul Mallik. All rights reserved.</p>
           <p>Designed for fully responsive browsing across desktop and mobile.</p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </footer>
   );
 };

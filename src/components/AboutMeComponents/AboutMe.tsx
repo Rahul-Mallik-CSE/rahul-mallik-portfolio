@@ -9,7 +9,6 @@ import {
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import { GoArrowUpRight } from "react-icons/go";
-import { ArrowDownToLine } from "lucide-react";
 import SectionHeading from "../CommonComponents/SectionHeading";
 import ResumeDownloadButton from "../CommonComponents/ResumeDownloadButton";
 type AboutMeProps = {
