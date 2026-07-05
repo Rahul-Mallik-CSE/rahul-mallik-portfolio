@@ -81,7 +81,7 @@ const EducationSection = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="relative"
             >
-              <div className="absolute left-6 top-0 h-full w-px bg-gradient-to-b from-[#95EDFF]/60 via-white/15 to-transparent sm:left-6" />
+              <div className="absolute left-6 top-0 h-full w-px bg-linear-to-b from-[#95EDFF]/60 via-white/15 to-transparent sm:left-6" />
               <div className="space-y-1">
                 {educationData.map((item, index) => (
                   <EducationItem

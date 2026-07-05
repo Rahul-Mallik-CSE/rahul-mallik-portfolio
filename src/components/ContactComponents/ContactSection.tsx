@@ -129,7 +129,7 @@ const ContactSection = ({ onOpenContact }: ContactSectionProps) => {
                           <p className="text-xs uppercase tracking-[0.24em] text-white/45">
                             {item.label}
                           </p>
-                          <p className="mt-1 text-sm font-medium text-white break-words">
+                          <p className="mt-1 text-sm font-medium text-white wrap-break-words">
                             {item.value}
                           </p>
                         </div>

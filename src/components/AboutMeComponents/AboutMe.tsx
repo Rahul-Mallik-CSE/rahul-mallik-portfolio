@@ -30,7 +30,7 @@ const AboutMe = ({ onOpenContact }: AboutMeProps) => {
             >
               <div className="w-full h-full rounded-[60px] bg-linear-to-br from-[#3a3a3a] via-[#4a5a5e] to-[#6a9aa8] overflow-hidden shadow-2xl">
                 <Image
-                  src="/logo.png"
+                  src="/logo-2.png"
                   alt="Profile"
                   width={6000}
                   height={6000}

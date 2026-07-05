@@ -107,7 +107,7 @@ const HeroSection = () => {
               animate="visible"
             >
               <Image
-                src="/logo.png"
+                src="/logo-3.png"
                 alt=""
                 width={6000}
                 height={6000}
