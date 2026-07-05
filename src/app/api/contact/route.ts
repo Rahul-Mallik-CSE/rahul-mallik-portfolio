@@ -90,6 +90,6 @@ export async function POST(request: Request) {
   });
 
   return NextResponse.json({
-    message: "Message sent successfully.",
+    message: "Thank you for reaching out!  I'll get back to you as soon as possible.",
   });
 }
