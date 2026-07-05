@@ -21,7 +21,8 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
       viewport={{ once: true, amount: 0.25 }}
       initial={{ opacity: 0, y: 36, scale: 0.98, filter: "blur(8px)" }}
-      transition={{ delay: index * 0.08, duration: 0.7, ease: "easeOut" }}
+      transition={{ delay: index * 0.05, duration: 0.5, ease: "easeOut" }}
+      whileHover={{ y: -6 }}
       className={`group relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.07)_0%,rgba(255,255,255,0.03)_100%)] shadow-[0_20px_70px_rgba(0,0,0,0.28)] transition-transform duration-300 hover:-translate-y-1 ${
         isFeatured ? "lg:col-span-2 xl:row-span-2" : ""
       }`}
