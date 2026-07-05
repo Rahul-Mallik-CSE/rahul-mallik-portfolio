@@ -55,10 +55,12 @@ const HeroSection = () => {
               animate="visible"
               className="md:max-w-3/4 text-gray-300 mb-8"
             >
-              A passionate{" "}
-              <span className="text-[#95EDFF]">Front-End Developer</span>{" "}
-              dedicated to building modern, responsive, and engaging web
-              experiences that bring ideas to life.
+              A passionate {" "}
+              <span className="text-[#95EDFF]">Software Engineer</span>
+               {" "}specializing in full-stack web development,
+                building scalable, responsive, and high-performance
+                 applications with modern technologies and best
+                  engineering practices.
             </motion.p>
 
             <motion.div

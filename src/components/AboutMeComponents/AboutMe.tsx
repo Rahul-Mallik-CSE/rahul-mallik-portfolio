@@ -53,7 +53,7 @@ const AboutMe = ({ onOpenContact }: AboutMeProps) => {
                   <strong className="text-white font-bold">Rahul Mallik</strong>
                 </h1>
                 <h1 className="text-[#95EDFF] font-medium text-lg lg:text-xl">
-                  Front-end Developer
+                  Software Engineer
                 </h1>
               </motion.div>
               <motion.div
@@ -71,25 +71,32 @@ const AboutMe = ({ onOpenContact }: AboutMeProps) => {
                 className="mt-1 lg:mt-2 text-xs md:text-sm lg:text-base text-gray-300 space-y-1"
               >
                 <p>
-                  I’m Rahul Mallik, a passionate and detail-oriented Front-End
-                  Developer with over one year of hands-on experience
-                  specializing in React.js and Next.js. I have a strong
-                  foundation in HTML5, CSS3, JavaScript, and modern front-end
-                  development practices.
+                  I’m Rahul Mallik, a passionate and detail-oriented Software Engineer
+                  with a strong focus on Front-End Development and growing expertise in
+                  full-stack engineering.
                 </p>
+
                 <p>
-                  I hold a BSc in Computer Science and Engineering from United
-                  International University, where I built a solid technical base
-                  and developed a deep interest in creating engaging,
-                  user-focused digital experiences.
+                  I hold a BSc in Computer Science and Engineering from United International
+                  University, where I built a strong foundation in software development,
+                  algorithms, and modern programming practices, with a deep interest in
+                  creating scalable and user-focused digital products.
                 </p>
+
                 <p>
-                  Currently, I’m working as a Junior Front-End Developer at Join
-                  Venture AI, where I contribute to building responsive,
-                  high-performance web applications — including e-commerce and
-                  CRM platforms. I focus on writing clean, efficient, and
-                  scalable code while ensuring seamless user experiences across
-                  devices.
+                  Currently, I work as a Junior Software Engineer(Front-end) at Join Venture AI,
+                  where I contribute to building responsive and high-performance web
+                  applications, including e-commerce and CRM platforms. I specialize in
+                  React.js, Next.js, TypeScript, and modern frontend architecture, focusing
+                  on clean code, reusable components, and optimized user experiences.
+                </p>
+
+                <p>
+                  Alongside frontend development, I am actively expanding into backend
+                  technologies, currently learning Node.js and Spring Boot to strengthen
+                  my full-stack development capabilities. I enjoy building end-to-end
+                  solutions and continuously improving my understanding of scalable system
+                  design and backend architecture.
                 </p>
               </motion.div>
 
