@@ -11,6 +11,7 @@ import { Button } from "../ui/button";
 import { GoArrowUpRight } from "react-icons/go";
 import { ArrowDownToLine } from "lucide-react";
 import SectionHeading from "../CommonComponents/SectionHeading";
+import ResumeDownloadButton from "../CommonComponents/ResumeDownloadButton";
 type AboutMeProps = {
   onOpenContact?: () => void;
 };
@@ -109,12 +110,9 @@ const AboutMe = ({ onOpenContact }: AboutMeProps) => {
                   </span>
                   <GoArrowUpRight className="w-8 h-6 font-bold  group-hover:rotate-45 transition-transform duration-300" />
                 </Button>
-                <Button className="group inline-flex  items-center justify-center gap-2 px-6 xl:px-7 py-3 xl:py-3.5 rounded-lg border-[0.5px] border-solid border-[#95EDFF] bg-[linear-gradient(134deg,rgba(37,37,37,1)_17%,rgba(132,132,132,1)_100%)] hover:opacity-90 transition-opacity">
-                  <span className="font-normal text-[#95EDFF] text-base xl:text-lg text-center leading-[21.6px] whitespace-nowrap tracking-[0]">
-                    View my Resume
-                  </span>{" "}
-                  <ArrowDownToLine className="text-[#95EDFF]" />
-                </Button>
+                
+                {/* Custom resume download button component is used here for better reusability and maintainability of the code. */}
+                <ResumeDownloadButton />
               </motion.div>
             </div>
           </div>

@@ -11,6 +11,7 @@ import { Button } from "../ui/button";
 import { ArrowDownToLine, Linkedin } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
+import ResumeDownloadButton from "../CommonComponents/ResumeDownloadButton";
 const HeroSection = () => {
   return (
     <section id="hero" className="w-full mt-4 px-4 lg:px-6 md:mt-6 scroll-mt-24">
@@ -66,14 +67,10 @@ const HeroSection = () => {
               animate="visible"
               className="gap-2 md:gap-4 flex flex-wrap justify-center md:justify-start"
             >
-              <Button className="group inline-flex  items-center justify-center gap-2 px-6 xl:px-7 py-3 xl:py-3.5 rounded-lg border-[0.5px] border-solid border-[#95EDFF] bg-[linear-gradient(134deg,rgba(37,37,37,1)_17%,rgba(132,132,132,1)_100%)] hover:opacity-90 transition-opacity">
-                <span className="font-normal text-[#95EDFF] text-base xl:text-lg text-center leading-[21.6px] whitespace-nowrap tracking-[0]">
-                  View my Resume
-                </span>{" "}
-                <ArrowDownToLine className="text-[#95EDFF]" />
-              </Button>
+              {/* Custom resume download button component is used here for better reusability and maintainability of the code. */} 
+              <ResumeDownloadButton />
 
-              <Button asChild className="group inline-flex  items-center justify-center gap-2 px-6 xl:px-7 py-3 xl:py-3.5 rounded-lg border-[0.5px] border-solid border-[#95EDFF] bg-[#95EDFF] hover:bg-[#7de5fa] hover:opacity-100 transition-opacity">
+              <Button asChild className="group inline-flex text-black items-center justify-center gap-2 px-6 xl:px-7 py-3 xl:py-3.5 rounded-lg border-[0.5px] border-solid border-[#95EDFF] bg-[#95EDFF] hover:bg-[#7de5fa] hover:opacity-100 transition-opacity">
                 <a href="#contact" className="font-normal text-black text-base xl:text-lg text-center leading-[21.6px] whitespace-nowrap tracking-[0]">
                   Hire me
                 </a>
